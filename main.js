@@ -7,7 +7,7 @@ const app = new PIXI.Application({ background: '#c9f7b0', resizeTo: window });
 
 document.body.appendChild(app.view);
 
-const player = PIXI.Sprite.from('assets/wizard idle1.png');
+const player = PIXI.Sprite.from('assets/wizardidle1.png');
 
 player.x = app.screen.width / 2;
 player.y = app.screen.height / 2;
@@ -33,12 +33,7 @@ earthElemental.roundPixels;
 // earthElemental.width = 50;
 
 
-
-while (i>0) {
-const bunny = PIXI.Sprite.from('assets/fire-skull.gif');
 app.stage.addChild(player,bunny,earthElemental);
-i = i - 1;
-}
 
 app.ticker.add(delta =>
 {
